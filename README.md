@@ -1,7 +1,8 @@
 ### Description
 We are going to create an image that runs a simple helloworld Golang script, that prints out to the terminal. We will make an innefficient image and and efficient image and show the difference in memory consumption. This is done by using multi-stage builds, which uses multiple FROM directives. Each FROM directive creates a new set of file system layers. However the effective comes from the ability for us to selectively copy the files from previous stages/file systems that have been overwritten. 
 <br>
-**The takeaway is that the inefficient copy takes up 700+ MB of space while the efficient copy takes 7+ MB of space. **
+
+*The takeaway is that the inefficient copy takes up 700+ MB of space while the efficient copy takes 7+ MB of space.*
 
 ### Prerequisites
 - you should have docker installed on your local machine or server
